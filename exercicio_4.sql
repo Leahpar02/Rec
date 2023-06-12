@@ -1,3 +1,5 @@
+#não sei se fiz certo
+
 create database carros;
 use carros;
 
