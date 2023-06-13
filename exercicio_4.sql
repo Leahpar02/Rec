@@ -1,5 +1,5 @@
 #não sei se fiz certo
-
+#Nesse caso utilizamos o 1:1 e o 1:N
 create database carros;
 use carros;
 
