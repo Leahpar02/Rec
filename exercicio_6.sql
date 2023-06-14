@@ -44,8 +44,8 @@ alter table llicenca add Valor_liquido decimal(10,3) after ValorAquisicao;
 update llicenca set valor_liquido = (ValorAquisicao + imposto_10) where year(DtAquisicao) > 2011;
 select NumLicenca, DtAquisicao, imposto_10, ValorAquisicao, valor_liquido from llicenca where year(DtAquisicao) > 2011;
 /*r*/
-select s.NomeSoftware, v.Versao from lsoftware s
-join lversao v on v.idSOFTWARE_FK = idSOFTWARE group by s.NomeSoftware, v.Versao;
+select sf.NomeSoftware, v.Versao from lsoftware sf
+join lversao v on v.idSOFTWARE_FK = idSOFTWARE group by sf.NomeSoftware, v.Versao;
 /*s*/
 select count(*) from lcliente;
 /*t*/
